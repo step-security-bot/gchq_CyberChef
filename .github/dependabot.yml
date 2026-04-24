@@ -60,6 +60,16 @@ updates:
         update-types:
           - 'patch'
 
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: daily
+
+  - package-ecosystem: docker
+    directory: /
+    schedule:
+      interval: daily
+
   # Can't enable this until we are using Node 24 as the latest actions all require this version
   # - package-ecosystem: "github-actions"
   #   # Workflow files stored in the default location of `.github/workflows`; no need to
